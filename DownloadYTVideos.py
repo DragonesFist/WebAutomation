@@ -2,7 +2,7 @@
 """
 Created on Sat Jun 24 20:14:34 2023
 
-@author: Jagadeesh Damarla
+@author: Someone under the sky
 """
 
 from selenium import webdriver
