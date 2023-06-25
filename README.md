@@ -25,4 +25,9 @@ Links.csv -- Contains the links for the videos to be downloaded from youtube. Th
 Don't remove or reduce the sleep times in the code. This is provided to accommodate the page delays and download interactions.
 After the program the chrome window will not be closed. This is done on purpose as the forced closure of chrome window can stop the current downloading video.
 
+## Pointers when u use YTDownload.py file
+Install the library using the following command in cmd
+`python -m pip install --force-reinstall https://github.com/yt-dlp/yt-dlp/archive/master.tar.gz`
+Now you can run the code in cmd
+
 
