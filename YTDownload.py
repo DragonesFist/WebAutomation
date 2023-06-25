@@ -7,7 +7,7 @@ Created on Sun Jun 25 13:11:05 2023
 
 # import youtube_dl
 import yt_dlp as youtube_dl
-
+import ffmpeg 
 
 playList = ["https://www.youtube.com/playlist?list=PLjhrDIztP9pf8SpkyZm7XpycUNwp1u8hz"]
 ytLink = "https://www.youtube.com/watch?v={}"
@@ -16,7 +16,13 @@ dlPath = r"C://Users//DELL//Downloads"
 
 ydl = youtube_dl.YoutubeDL({'dump_single_json': False,
                             'extract_flat' : True,
-                            'format': 'bestaudio',  #use it if you want audio only
+                            'format': 'bestaudio',  #use it if you want audio only , comment this line for entire video
+                            'postprocessors': [{
+                                'key': 'FFmpegExtractAudio',
+                                'preferredcodec': 'mp3',
+                                'preferredquality': '192'
+                            }],
+                            'ffmpeg_location':r"C:/ffmpeg/bin",
                             'outtmpl' : dlPath + '/%(title)s.%(ext)s'
                             })
 

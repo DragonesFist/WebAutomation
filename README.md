@@ -28,6 +28,8 @@ After the program the chrome window will not be closed. This is done on purpose 
 ## Pointers when u use YTDownload.py file
 Install the library using the following command in cmd
 `python -m pip install --force-reinstall https://github.com/yt-dlp/yt-dlp/archive/master.tar.gz`
+Download the ffmpeg from https://github.com/BtbN/FFmpeg-Builds/releases . Check for windows distribution and download it.
+Extract the zip folder into some location and copy the path. You should use this path in the code for ffmpeg_location key in the options dictionary.
 Now you can run the code in cmd
 
 
